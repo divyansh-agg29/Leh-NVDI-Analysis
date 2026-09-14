@@ -328,6 +328,42 @@ def get_band_mapping(image):
     )
 
 
+def get_server_side_band_mapping(image):
+    """
+    Return sensor-specific Landsat band mappings
+    using Earth Engine server-side logic.
+
+    This function is designed for use inside
+    ImageCollection.map().
+
+    Parameters
+    ----------
+    image : ee.Image
+        Landsat image.
+
+    Returns
+    -------
+    ee.Dictionary
+        Sensor-specific band mapping.
+    """
+
+    spacecraft_id = ee.String(
+        image.get("SPACECRAFT_ID")
+    )
+
+    is_landsat_89 = ee.List(
+        ["LANDSAT_8", "LANDSAT_9"]
+    ).contains(spacecraft_id)
+
+    return ee.Dictionary(
+        ee.Algorithms.If(
+            is_landsat_89,
+            ee.Dictionary(LANDSAT_89_BANDS),
+            ee.Dictionary(LANDSAT_457_BANDS)
+        )
+    )
+
+
 
 # ============================================================
 # 6. Collection Validation
