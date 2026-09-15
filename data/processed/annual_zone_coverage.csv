@@ -1,0 +1,149 @@
+year,zone_id,zone_type,name,image_count,valid_pixel_count,total_pixel_count,valid_coverage_percent
+1989,agriculture_01,agricultural,Irrigated agricultural land,1,1282.372549019608,3262.3882352941155,39.30778486589281
+1989,aoi_leh_immediate,aoi,Leh town and immediate surroundings,1,19869.078431372553,38054.058823529376,52.212770583849554
+1989,natural_01,natural,Natural mountain,1,3217.5372549019603,4310.784313725495,74.63925403684321
+1989,urban_01,urban,Leh urban settlement,1,10351.709803921565,16741.58823529411,61.8323044291485
+1990,agriculture_01,agricultural,Irrigated agricultural land,3,3262.3882352941155,3262.3882352941155,100.0
+1990,aoi_leh_immediate,aoi,Leh town and immediate surroundings,3,38054.058823529376,38054.058823529376,100.0
+1990,natural_01,natural,Natural mountain,3,4310.784313725495,4310.784313725495,100.0
+1990,urban_01,urban,Leh urban settlement,3,16741.58823529411,16741.58823529411,100.0
+1991,agriculture_01,agricultural,Irrigated agricultural land,2,3262.3882352941155,3262.3882352941155,100.0
+1991,aoi_leh_immediate,aoi,Leh town and immediate surroundings,2,38054.058823529376,38054.058823529376,100.0
+1991,natural_01,natural,Natural mountain,2,4310.784313725495,4310.784313725495,100.0
+1991,urban_01,urban,Leh urban settlement,2,16741.58823529411,16741.58823529411,100.0
+1992,agriculture_01,agricultural,Irrigated agricultural land,3,3262.3882352941155,3262.3882352941155,100.0
+1992,aoi_leh_immediate,aoi,Leh town and immediate surroundings,3,38054.058823529376,38054.058823529376,100.0
+1992,natural_01,natural,Natural mountain,3,4310.784313725495,4310.784313725495,100.0
+1992,urban_01,urban,Leh urban settlement,3,16741.58823529411,16741.58823529411,100.0
+1993,agriculture_01,agricultural,Irrigated agricultural land,2,3262.3882352941155,3262.3882352941155,100.0
+1993,aoi_leh_immediate,aoi,Leh town and immediate surroundings,2,38054.058823529376,38054.058823529376,100.0
+1993,natural_01,natural,Natural mountain,2,4310.784313725495,4310.784313725495,100.0
+1993,urban_01,urban,Leh urban settlement,2,16741.58823529411,16741.58823529411,100.0
+1994,agriculture_01,agricultural,Irrigated agricultural land,3,3262.3882352941155,3262.3882352941155,100.0
+1994,aoi_leh_immediate,aoi,Leh town and immediate surroundings,3,38054.058823529376,38054.058823529376,100.0
+1994,natural_01,natural,Natural mountain,3,4310.784313725495,4310.784313725495,100.0
+1994,urban_01,urban,Leh urban settlement,3,16741.58823529411,16741.58823529411,100.0
+1995,agriculture_01,agricultural,Irrigated agricultural land,0,0.0,0.0,0.0
+1995,aoi_leh_immediate,aoi,Leh town and immediate surroundings,0,0.0,0.0,0.0
+1995,natural_01,natural,Natural mountain,0,0.0,0.0,0.0
+1995,urban_01,urban,Leh urban settlement,0,0.0,0.0,0.0
+1996,agriculture_01,agricultural,Irrigated agricultural land,4,3262.3882352941155,3262.3882352941155,100.0
+1996,aoi_leh_immediate,aoi,Leh town and immediate surroundings,4,38054.058823529376,38054.058823529376,100.0
+1996,natural_01,natural,Natural mountain,4,4310.784313725495,4310.784313725495,100.0
+1996,urban_01,urban,Leh urban settlement,4,16741.58823529411,16741.58823529411,100.0
+1997,agriculture_01,agricultural,Irrigated agricultural land,1,3233.560784313723,3262.3882352941155,99.11636969908967
+1997,aoi_leh_immediate,aoi,Leh town and immediate surroundings,1,37458.59999999999,38054.058823529376,98.43522913996968
+1997,natural_01,natural,Natural mountain,1,4310.784313725495,4310.784313725495,100.0
+1997,urban_01,urban,Leh urban settlement,1,16353.290196078426,16741.58823529411,97.68063797915488
+1998,agriculture_01,agricultural,Irrigated agricultural land,3,3262.3882352941155,3262.3882352941155,100.0
+1998,aoi_leh_immediate,aoi,Leh town and immediate surroundings,3,38054.058823529376,38054.058823529376,100.0
+1998,natural_01,natural,Natural mountain,3,4310.784313725495,4310.784313725495,100.0
+1998,urban_01,urban,Leh urban settlement,3,16741.58823529411,16741.58823529411,100.0
+1999,agriculture_01,agricultural,Irrigated agricultural land,2,3262.3882352941155,3262.3882352941155,100.0
+1999,aoi_leh_immediate,aoi,Leh town and immediate surroundings,2,38054.058823529376,38054.058823529376,100.0
+1999,natural_01,natural,Natural mountain,2,4310.784313725495,4310.784313725495,100.0
+1999,urban_01,urban,Leh urban settlement,2,16741.58823529411,16741.58823529411,100.0
+2000,agriculture_01,agricultural,Irrigated agricultural land,6,3262.3882352941155,3262.3882352941155,100.0
+2000,aoi_leh_immediate,aoi,Leh town and immediate surroundings,6,38054.058823529376,38054.058823529376,100.0
+2000,natural_01,natural,Natural mountain,6,4310.784313725495,4310.784313725495,100.0
+2000,urban_01,urban,Leh urban settlement,6,16741.58823529411,16741.58823529411,100.0
+2001,agriculture_01,agricultural,Irrigated agricultural land,3,3262.3882352941155,3262.3882352941155,100.0
+2001,aoi_leh_immediate,aoi,Leh town and immediate surroundings,3,38054.058823529376,38054.058823529376,100.0
+2001,natural_01,natural,Natural mountain,3,4310.784313725495,4310.784313725495,100.0
+2001,urban_01,urban,Leh urban settlement,3,16741.58823529411,16741.58823529411,100.0
+2002,agriculture_01,agricultural,Irrigated agricultural land,3,3262.3882352941155,3262.3882352941155,100.0
+2002,aoi_leh_immediate,aoi,Leh town and immediate surroundings,3,38054.058823529376,38054.058823529376,100.0
+2002,natural_01,natural,Natural mountain,3,4310.784313725495,4310.784313725495,100.0
+2002,urban_01,urban,Leh urban settlement,3,16741.58823529411,16741.58823529411,100.0
+2003,agriculture_01,agricultural,Irrigated agricultural land,3,3262.3882352941155,3262.3882352941155,100.0
+2003,aoi_leh_immediate,aoi,Leh town and immediate surroundings,3,38054.058823529376,38054.058823529376,100.0
+2003,natural_01,natural,Natural mountain,3,4310.784313725495,4310.784313725495,100.0
+2003,urban_01,urban,Leh urban settlement,3,16741.58823529411,16741.58823529411,100.0
+2004,agriculture_01,agricultural,Irrigated agricultural land,2,3262.3882352941155,3262.3882352941155,100.0
+2004,aoi_leh_immediate,aoi,Leh town and immediate surroundings,2,38054.058823529376,38054.058823529376,100.0
+2004,natural_01,natural,Natural mountain,2,4310.784313725495,4310.784313725495,100.0
+2004,urban_01,urban,Leh urban settlement,2,16741.58823529411,16741.58823529411,100.0
+2005,agriculture_01,agricultural,Irrigated agricultural land,4,3262.3882352941155,3262.3882352941155,100.0
+2005,aoi_leh_immediate,aoi,Leh town and immediate surroundings,4,38054.058823529376,38054.058823529376,100.0
+2005,natural_01,natural,Natural mountain,4,4310.784313725495,4310.784313725495,100.0
+2005,urban_01,urban,Leh urban settlement,4,16741.588235294108,16741.588235294108,100.0
+2006,agriculture_01,agricultural,Irrigated agricultural land,6,3262.3882352941155,3262.3882352941155,100.0
+2006,aoi_leh_immediate,aoi,Leh town and immediate surroundings,6,38054.058823529376,38054.058823529376,100.0
+2006,natural_01,natural,Natural mountain,6,4310.784313725495,4310.784313725495,100.0
+2006,urban_01,urban,Leh urban settlement,6,16741.58823529411,16741.58823529411,100.0
+2007,agriculture_01,agricultural,Irrigated agricultural land,5,3262.3882352941155,3262.3882352941155,100.0
+2007,aoi_leh_immediate,aoi,Leh town and immediate surroundings,5,38054.058823529376,38054.058823529376,100.0
+2007,natural_01,natural,Natural mountain,5,4310.784313725495,4310.784313725495,100.0
+2007,urban_01,urban,Leh urban settlement,5,16741.58823529411,16741.58823529411,100.0
+2008,agriculture_01,agricultural,Irrigated agricultural land,11,3262.3882352941155,3262.3882352941155,100.0
+2008,aoi_leh_immediate,aoi,Leh town and immediate surroundings,11,38054.058823529376,38054.058823529376,100.0
+2008,natural_01,natural,Natural mountain,11,4310.784313725495,4310.784313725495,100.0
+2008,urban_01,urban,Leh urban settlement,11,16741.58823529411,16741.58823529411,100.0
+2009,agriculture_01,agricultural,Irrigated agricultural land,15,3262.3882352941155,3262.3882352941155,100.0
+2009,aoi_leh_immediate,aoi,Leh town and immediate surroundings,15,38054.058823529376,38054.058823529376,100.0
+2009,natural_01,natural,Natural mountain,15,4310.784313725495,4310.784313725495,100.0
+2009,urban_01,urban,Leh urban settlement,15,16741.588235294108,16741.588235294108,100.0
+2010,agriculture_01,agricultural,Irrigated agricultural land,8,3262.3882352941155,3262.3882352941155,100.0
+2010,aoi_leh_immediate,aoi,Leh town and immediate surroundings,8,38054.058823529376,38054.058823529376,100.0
+2010,natural_01,natural,Natural mountain,8,4310.784313725495,4310.784313725495,100.0
+2010,urban_01,urban,Leh urban settlement,8,16741.58823529411,16741.58823529411,100.0
+2011,agriculture_01,agricultural,Irrigated agricultural land,13,3262.3882352941155,3262.3882352941155,100.0
+2011,aoi_leh_immediate,aoi,Leh town and immediate surroundings,13,38054.058823529376,38054.058823529376,100.0
+2011,natural_01,natural,Natural mountain,13,4310.784313725495,4310.784313725495,100.0
+2011,urban_01,urban,Leh urban settlement,13,16741.58823529411,16741.58823529411,100.0
+2012,agriculture_01,agricultural,Irrigated agricultural land,4,3262.3882352941155,3262.3882352941155,100.0
+2012,aoi_leh_immediate,aoi,Leh town and immediate surroundings,4,38054.058823529376,38054.058823529376,100.0
+2012,natural_01,natural,Natural mountain,4,4310.784313725495,4310.784313725495,100.0
+2012,urban_01,urban,Leh urban settlement,4,16741.58823529411,16741.58823529411,100.0
+2013,agriculture_01,agricultural,Irrigated agricultural land,12,3262.3882352941155,3262.3882352941155,100.0
+2013,aoi_leh_immediate,aoi,Leh town and immediate surroundings,12,38054.058823529376,38054.058823529376,100.0
+2013,natural_01,natural,Natural mountain,12,4310.784313725495,4310.784313725495,100.0
+2013,urban_01,urban,Leh urban settlement,12,16741.58823529411,16741.58823529411,100.0
+2014,agriculture_01,agricultural,Irrigated agricultural land,11,3262.3882352941155,3262.3882352941155,100.0
+2014,aoi_leh_immediate,aoi,Leh town and immediate surroundings,11,38054.058823529376,38054.058823529376,100.0
+2014,natural_01,natural,Natural mountain,11,4310.784313725495,4310.784313725495,100.0
+2014,urban_01,urban,Leh urban settlement,11,16741.58823529411,16741.58823529411,100.0
+2015,agriculture_01,agricultural,Irrigated agricultural land,10,3262.3882352941155,3262.3882352941155,100.0
+2015,aoi_leh_immediate,aoi,Leh town and immediate surroundings,10,38054.058823529376,38054.058823529376,100.0
+2015,natural_01,natural,Natural mountain,10,4310.784313725495,4310.784313725495,100.0
+2015,urban_01,urban,Leh urban settlement,10,16741.58823529411,16741.58823529411,100.0
+2016,agriculture_01,agricultural,Irrigated agricultural land,14,3262.3882352941155,3262.3882352941155,100.0
+2016,aoi_leh_immediate,aoi,Leh town and immediate surroundings,14,38054.058823529376,38054.058823529376,100.0
+2016,natural_01,natural,Natural mountain,14,4310.784313725495,4310.784313725495,100.0
+2016,urban_01,urban,Leh urban settlement,14,16741.58823529411,16741.58823529411,100.0
+2017,agriculture_01,agricultural,Irrigated agricultural land,16,3262.3882352941155,3262.3882352941155,100.0
+2017,aoi_leh_immediate,aoi,Leh town and immediate surroundings,16,38054.058823529376,38054.058823529376,100.0
+2017,natural_01,natural,Natural mountain,16,4310.784313725495,4310.784313725495,100.0
+2017,urban_01,urban,Leh urban settlement,16,16741.58823529411,16741.58823529411,100.0
+2018,agriculture_01,agricultural,Irrigated agricultural land,10,3262.3882352941155,3262.3882352941155,100.0
+2018,aoi_leh_immediate,aoi,Leh town and immediate surroundings,10,38054.058823529376,38054.058823529376,100.0
+2018,natural_01,natural,Natural mountain,10,4310.784313725495,4310.784313725495,100.0
+2018,urban_01,urban,Leh urban settlement,10,16741.58823529411,16741.58823529411,100.0
+2019,agriculture_01,agricultural,Irrigated agricultural land,15,3262.3882352941155,3262.3882352941155,100.0
+2019,aoi_leh_immediate,aoi,Leh town and immediate surroundings,15,38054.058823529376,38054.058823529376,100.0
+2019,natural_01,natural,Natural mountain,15,4310.784313725495,4310.784313725495,100.0
+2019,urban_01,urban,Leh urban settlement,15,16741.58823529411,16741.58823529411,100.0
+2020,agriculture_01,agricultural,Irrigated agricultural land,13,3262.3882352941155,3262.3882352941155,100.0
+2020,aoi_leh_immediate,aoi,Leh town and immediate surroundings,13,38054.058823529376,38054.058823529376,100.0
+2020,natural_01,natural,Natural mountain,13,4310.784313725495,4310.784313725495,100.0
+2020,urban_01,urban,Leh urban settlement,13,16741.58823529411,16741.58823529411,100.0
+2021,agriculture_01,agricultural,Irrigated agricultural land,12,3262.3882352941155,3262.3882352941155,100.0
+2021,aoi_leh_immediate,aoi,Leh town and immediate surroundings,12,38054.058823529376,38054.058823529376,100.0
+2021,natural_01,natural,Natural mountain,12,4310.784313725495,4310.784313725495,100.0
+2021,urban_01,urban,Leh urban settlement,12,16741.58823529411,16741.58823529411,100.0
+2022,agriculture_01,agricultural,Irrigated agricultural land,30,3262.3882352941155,3262.3882352941155,100.0
+2022,aoi_leh_immediate,aoi,Leh town and immediate surroundings,30,38054.058823529376,38054.058823529376,100.0
+2022,natural_01,natural,Natural mountain,30,4310.784313725495,4310.784313725495,100.0
+2022,urban_01,urban,Leh urban settlement,30,16741.58823529411,16741.58823529411,100.0
+2023,agriculture_01,agricultural,Irrigated agricultural land,27,3262.3882352941155,3262.3882352941155,100.0
+2023,aoi_leh_immediate,aoi,Leh town and immediate surroundings,27,38054.058823529376,38054.058823529376,100.0
+2023,natural_01,natural,Natural mountain,27,4310.784313725495,4310.784313725495,100.0
+2023,urban_01,urban,Leh urban settlement,27,16741.58823529411,16741.58823529411,100.0
+2024,agriculture_01,agricultural,Irrigated agricultural land,18,3262.3882352941155,3262.3882352941155,100.0
+2024,aoi_leh_immediate,aoi,Leh town and immediate surroundings,18,38054.058823529376,38054.058823529376,100.0
+2024,natural_01,natural,Natural mountain,18,4310.784313725495,4310.784313725495,100.0
+2024,urban_01,urban,Leh urban settlement,18,16741.58823529411,16741.58823529411,100.0
+2025,agriculture_01,agricultural,Irrigated agricultural land,12,3262.3882352941155,3262.3882352941155,100.0
+2025,aoi_leh_immediate,aoi,Leh town and immediate surroundings,12,38054.058823529376,38054.058823529376,100.0
+2025,natural_01,natural,Natural mountain,12,4310.784313725495,4310.784313725495,100.0
+2025,urban_01,urban,Leh urban settlement,12,16741.58823529411,16741.58823529411,100.0
