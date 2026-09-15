@@ -1,0 +1,165 @@
+{
+    "run_id": "run_20260915_193151",
+    "run_timestamp": "2026-09-15T19:32:41.621612+05:30",
+    "project": {
+        "name": "leh-ndvi-analysis",
+        "timezone": "Asia/Kolkata"
+    },
+    "study": {
+        "name": "Leh and surrounding region",
+        "description": "Satellite-based analysis of vegetation change, climate and human land use"
+    },
+    "configuration": {
+        "config_file": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\config\\settings.yaml",
+        "satellite": {
+            "primary_dataset": "landsat",
+            "start_year": 1984,
+            "end_year": 2025,
+            "growing_season_start_month": 5,
+            "growing_season_end_month": 10
+        },
+        "analysis": {
+            "cloud_cover_limit": 40,
+            "scale_meters": 30,
+            "ndvi_min": -1,
+            "ndvi_max": 1
+        }
+    },
+    "earth_engine": {
+        "dataset_type": "landsat",
+        "image_count": 647,
+        "available_sensors": [
+            "LANDSAT_5",
+            "LANDSAT_7",
+            "LANDSAT_8",
+            "LANDSAT_9"
+        ],
+        "collection_date_range": {
+            "start_date": "1989-08-06",
+            "end_date": "2025-12-23"
+        }
+    },
+    "zones": {
+        "zone_count": 4,
+        "zone_ids": [
+            "aoi_leh_immediate",
+            "urban_01",
+            "agriculture_01",
+            "natural_01"
+        ],
+        "zone_types": [
+            "aoi",
+            "urban",
+            "agricultural",
+            "natural"
+        ]
+    },
+    "annual_processing": {
+        "requested_start_year": 1984,
+        "requested_end_year": 2025,
+        "available_years": [
+            1989,
+            1990,
+            1991,
+            1992,
+            1993,
+            1994,
+            1995,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+        ],
+        "valid_years": [
+            1989,
+            1990,
+            1991,
+            1992,
+            1993,
+            1994,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+        ],
+        "missing_years": [
+            1995
+        ],
+        "valid_year_count": 36,
+        "missing_year_count": 1
+    },
+    "results": {
+        "row_count": 144,
+        "column_names": [
+            "count",
+            "max",
+            "mean",
+            "median",
+            "min",
+            "name",
+            "stdDev",
+            "year",
+            "zone_id",
+            "zone_type"
+        ]
+    },
+    "outputs": {
+        "run_directory": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_193151",
+        "ndvi_csv": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_193151\\annual_zone_ndvi.csv",
+        "processing_metadata_csv": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_193151\\annual_processing_metadata.csv",
+        "run_metadata_json": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_193151\\run_metadata.json",
+        "config_snapshot": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_193151\\settings_snapshot.yaml"
+    }
+}

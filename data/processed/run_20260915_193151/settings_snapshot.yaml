@@ -1,0 +1,77 @@
+
+# ============================================================
+# Leh Greening Research Project
+# Central Project Configuration
+# ============================================================
+
+
+# ------------------------------------------------------------
+# 1. Project Information
+# ------------------------------------------------------------
+
+project:
+  name: "leh-ndvi-analysis"
+  timezone: "Asia/Kolkata"
+
+
+# ------------------------------------------------------------
+# 2. Study Information
+# ------------------------------------------------------------
+
+study:
+  name: "Leh and surrounding region"
+  description: "Satellite-based analysis of vegetation change, climate and human land use"
+
+
+# ------------------------------------------------------------
+# 3. Satellite Data Configuration
+# ------------------------------------------------------------
+
+satellite:
+
+  # Initial primary dataset.
+  # This is a provisional choice and will be verified during
+  # satellite data exploration.
+
+  primary_dataset: "landsat"
+
+  # Flexible historical period.
+  # These are initial working values, not final research dates.
+
+  start_year: 1984
+  end_year: 2025
+
+  # Growing season.
+  # Initial assumption for experimentation.
+
+  growing_season_start_month: 5
+  growing_season_end_month: 10
+
+
+# ------------------------------------------------------------
+# 4. Analysis Configuration
+# ------------------------------------------------------------
+
+analysis:
+
+  # Maximum allowed image cloud cover percentage.
+  cloud_cover_limit: 40
+
+  # Processing resolution in meters.
+  scale_meters: 30
+
+  # NDVI valid range.
+
+  ndvi_min: -1
+  ndvi_max: 1
+
+
+# ------------------------------------------------------------
+# 5. Output Configuration
+# ------------------------------------------------------------
+
+outputs:
+
+  export_csv: true
+  export_maps: true
+  export_figures: true
