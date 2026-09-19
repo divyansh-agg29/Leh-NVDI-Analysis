@@ -1,6 +1,6 @@
 {
-    "run_id": "run_20260915_193151",
-    "run_timestamp": "2026-09-15T19:32:41.621612+05:30",
+    "run_id": "run_20260915_233901",
+    "run_timestamp": "2026-09-15T23:39:53.602089+05:30",
     "project": {
         "name": "leh-ndvi-analysis",
         "timezone": "Asia/Kolkata"
@@ -13,7 +13,7 @@
         "config_file": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\config\\settings.yaml",
         "satellite": {
             "primary_dataset": "landsat",
-            "start_year": 1984,
+            "start_year": 1990,
             "end_year": 2025,
             "growing_season_start_month": 5,
             "growing_season_end_month": 10
@@ -27,7 +27,7 @@
     },
     "earth_engine": {
         "dataset_type": "landsat",
-        "image_count": 647,
+        "image_count": 645,
         "available_sensors": [
             "LANDSAT_5",
             "LANDSAT_7",
@@ -35,7 +35,7 @@
             "LANDSAT_9"
         ],
         "collection_date_range": {
-            "start_date": "1989-08-06",
+            "start_date": "1990-04-03",
             "end_date": "2025-12-23"
         }
     },
@@ -55,10 +55,9 @@
         ]
     },
     "annual_processing": {
-        "requested_start_year": 1984,
+        "requested_start_year": 1990,
         "requested_end_year": 2025,
         "available_years": [
-            1989,
             1990,
             1991,
             1992,
@@ -97,7 +96,6 @@
             2025
         ],
         "valid_years": [
-            1989,
             1990,
             1991,
             1992,
@@ -137,11 +135,11 @@
         "missing_years": [
             1995
         ],
-        "valid_year_count": 36,
+        "valid_year_count": 35,
         "missing_year_count": 1
     },
     "results": {
-        "row_count": 144,
+        "row_count": 140,
         "column_names": [
             "count",
             "max",
@@ -156,10 +154,10 @@
         ]
     },
     "outputs": {
-        "run_directory": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_193151",
-        "ndvi_csv": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_193151\\annual_zone_ndvi.csv",
-        "processing_metadata_csv": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_193151\\annual_processing_metadata.csv",
-        "run_metadata_json": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_193151\\run_metadata.json",
-        "config_snapshot": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_193151\\settings_snapshot.yaml"
+        "run_directory": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_233901",
+        "ndvi_csv": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_233901\\annual_zone_ndvi.csv",
+        "processing_metadata_csv": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_233901\\annual_processing_metadata.csv",
+        "run_metadata_json": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_233901\\run_metadata.json",
+        "config_snapshot": "C:\\Users\\divya\\OneDrive\\Desktop\\Programming\\dev\\Leh-NVDI-Analysis\\data\\processed\\run_20260915_233901\\settings_snapshot.yaml"
     }
 }
