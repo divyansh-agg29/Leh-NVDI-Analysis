@@ -974,8 +974,143 @@ def create_spatial_ndvi_maps(
     return selected_years
 
 
+
+
+# ------------------------------------------------------------
+# 7. Statistical Summary
+# ------------------------------------------------------------
+
+def create_ndvi_summary(
+    df: pd.DataFrame,
+    output_path: str | Path,
+) -> pd.DataFrame:
+    """
+    Create a first-vs-last year NDVI summary for each zone.
+
+    The summary describes observed NDVI change between the
+    earliest and latest available years. It does not calculate
+    a statistical trend or significance test.
+
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        Annual zone-level NDVI results.
+
+    output_path : str or Path
+        Destination CSV path.
+
+    Returns
+    -------
+    pandas.DataFrame
+        Summary table.
+    """
+
+    required_columns = {
+        "year",
+        "zone_id",
+        "zone_type",
+        "name",
+        "mean",
+    }
+
+    missing = required_columns - set(df.columns)
+
+    if missing:
+        raise ValueError(
+            f"Missing required columns for summary: {sorted(missing)}"
+        )
+
+    data = df.copy()
+
+    # Ensure numeric year and mean values.
+    data["year"] = pd.to_numeric(
+        data["year"],
+        errors="coerce",
+    )
+
+    data["mean"] = pd.to_numeric(
+        data["mean"],
+        errors="coerce",
+    )
+
+    # Remove rows that cannot contribute to the summary.
+    data = data.dropna(
+        subset=[
+            "year",
+            "mean",
+            "zone_id",
+        ]
+    )
+
+    if data.empty:
+        raise ValueError(
+            "No valid NDVI observations available for summary."
+        )
+
+    data["year"] = data["year"].astype(int)
+
+    summary_rows = []
+
+    for zone_id, zone_df in data.groupby(
+        "zone_id",
+        sort=True,
+    ):
+
+        zone_df = zone_df.sort_values("year")
+
+        first_row = zone_df.iloc[0]
+        last_row = zone_df.iloc[-1]
+
+        first_ndvi = float(first_row["mean"])
+        last_ndvi = float(last_row["mean"])
+
+        change = last_ndvi - first_ndvi
+
+        if first_ndvi != 0:
+            change_percent = (
+                change / abs(first_ndvi)
+            ) * 100.0
+        else:
+            change_percent = float("nan")
+
+        summary_rows.append(
+            {
+                "zone_id": zone_id,
+                "zone_type": first_row["zone_type"],
+                "zone_name": first_row["name"],
+                "first_year": int(first_row["year"]),
+                "first_mean_ndvi": first_ndvi,
+                "last_year": int(last_row["year"]),
+                "last_mean_ndvi": last_ndvi,
+                "ndvi_change": change,
+                "ndvi_change_percent": change_percent,
+            }
+        )
+
+    summary = pd.DataFrame(summary_rows)
+
+    summary = summary.sort_values(
+        by="zone_id",
+        kind="stable",
+    ).reset_index(drop=True)
+
+    output_path = Path(output_path)
+    output_path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    summary.to_csv(
+        output_path,
+        index=False,
+    )
+
+    return summary
+
+
+
 # ============================================================
-# 7. Script Entry Point
+# 8. Script Entry Point
 # ============================================================
 
 if __name__ == "__main__":
@@ -1012,7 +1147,7 @@ if __name__ == "__main__":
     )
 
     # --------------------------------------------------------
-    # Stage 9.1
+    # Annual Zone-wise NDVI Plot
     # --------------------------------------------------------
 
     print(
@@ -1029,7 +1164,7 @@ if __name__ == "__main__":
     )
 
     # --------------------------------------------------------
-    # Stage 9.2
+    # Comparison and Distribution Plots
     # --------------------------------------------------------
 
     print(
@@ -1058,8 +1193,25 @@ if __name__ == "__main__":
         show=False,
     )
 
+
     # --------------------------------------------------------
-    # Stage 9.3
+    # Summary Table
+    # --------------------------------------------------------
+
+    summary_path = RUN_DIR / "summary_statistics.csv"
+
+    summary = create_ndvi_summary(
+        df=ndvi_results,
+        output_path=summary_path,
+    )
+
+    print(summary)
+    print(f"Summary saved to: {summary_path}")
+
+
+
+    # --------------------------------------------------------
+    # EE NDVI map Export Tasks
     # --------------------------------------------------------
 
     print(
