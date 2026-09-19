@@ -982,36 +982,20 @@ if __name__ == "__main__":
 
     print("Loading project configuration...")
 
-    project_root = Path(__file__).resolve().parent.parent
+    RUN_DIR = Path(
+            "data/processed/run_20260915_233901"
+        )
 
-    config_path = (
-        project_root
-        / "config"
-        / "settings.yaml"
-    )
-
-    config = load_config(
-        config_path
-    )
-
-    validate_config(
-        config
-    )
-
-    run_directory = (
-        project_root
-        / "data"
-        / "processed"
-        / "run_20260915_233901"
-    )
+    VISUALIZATION_DIR = RUN_DIR / "visualizations"
+    VISUALIZATION_DIR.mkdir(parents=True, exist_ok=True)
 
     ndvi_csv_path = (
-        run_directory
+        RUN_DIR
         / "annual_zone_ndvi.csv"
     )
 
     metadata_csv_path = (
-        run_directory
+        RUN_DIR
         / "annual_processing_metadata.csv"
     )
 
@@ -1038,10 +1022,10 @@ if __name__ == "__main__":
     plot_annual_ndvi_trends(
         ndvi_df=ndvi_results,
         output_path=(
-            run_directory
+            VISUALIZATION_DIR
             / "annual_ndvi_trends.png"
         ),
-        show=True,
+        show=False,
     )
 
     # --------------------------------------------------------
@@ -1055,10 +1039,10 @@ if __name__ == "__main__":
     plot_average_ndvi_by_zone(
         ndvi_df=ndvi_results,
         output_path=(
-            run_directory
+            VISUALIZATION_DIR
             / "average_ndvi_by_zone.png"
         ),
-        show=True,
+        show=False,
     )
 
     print(
@@ -1068,10 +1052,10 @@ if __name__ == "__main__":
     plot_ndvi_distribution_by_zone(
         ndvi_df=ndvi_results,
         output_path=(
-            run_directory
+            VISUALIZATION_DIR
             / "ndvi_distribution_by_zone.png"
         ),
-        show=True,
+        show=False,
     )
 
     # --------------------------------------------------------
@@ -1081,6 +1065,16 @@ if __name__ == "__main__":
     print(
         "Creating spatial NDVI map export tasks..."
     )
+
+    SETTINGS_PATH = RUN_DIR / "settings_snapshot.yaml"
+    
+    config = load_config(
+            SETTINGS_PATH
+        )
+
+    validate_config(
+            config
+        )
 
     selected_years = create_spatial_ndvi_maps(
         config=config,
